@@ -11,9 +11,6 @@ RUN npm ci --only=production
 # Copia el resto del código
 COPY . .
 
-# Construye la aplicación si es necesario
-# RUN npm run build
-
 # Comienza desde una imagen ligera
 FROM node:18-slim
 WORKDIR /usr/src/app
